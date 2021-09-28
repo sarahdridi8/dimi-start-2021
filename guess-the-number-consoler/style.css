@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body, body * {
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    background-color: blueviolet;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.flex-center {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font size: 120px;
+}
+
+p span {
+    font-family: 'Inconsolata', monospace;
+    display : block;
+    background-color: rebeccapurple;
+    border: dotted 2px white;
+    border-radius: 16px;
+    padding: 16px;
+}
