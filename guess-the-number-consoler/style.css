@@ -38,10 +38,12 @@ p span {
   
   @keyframes bounce-anim {
     from {
-      transform: translateX(0%);
+        color : white
+      transform : rotate(-39deg) scale (0%;)
     }
   
     to {
-      transform: translateX(100%);
+      opacity: 1;
+      transform: rotate(0); scale: (100%);
     }
   }
