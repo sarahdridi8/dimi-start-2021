@@ -8,6 +8,11 @@ const mysteryNumber = Math.round(Math.random() * 100)
 
 const submit = (x) => {
 
+    if (x === 'cheat') {
+        console.log(`mystery number is ${mysteryNumber}`)
+        return
+    }
+
     x = parseFloat (x)
 
     if (Number.isNaN(x)) {
