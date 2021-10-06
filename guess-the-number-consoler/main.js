@@ -7,18 +7,32 @@ const mysteryNumber = Math.round(Math.random() * 100)
 
 
 const submit = (x) => {
-    if (x < mysteryNumber) {
+
+    x = parseFloat (x)
+
+    if (Number.isNaN(x)) {
+        console.log('TWrong input, plaese give a number')
+        document.body.innerHTML = '<h1>⚠️</h1>'
+        document.body.style.backgroundColor = 'red'
+    }
+
+    else if (x < 0 || x >100) {
+        console.log('Number should be between 0 & 100')
+        document.body.innerHTML = '<h1>Number should be between 0 & 100.</h1>'
+        document.body.style.backgroundColor = '#red'
+
+    else if (x < mysteryNumber) {
         console.log('Too small.')
         document.body.innerHTML = '<h1>Too small.</h1>'
         document.body.style.backgroundColor = '#801854'
 
     }
-    if (x > mysteryNumber) {
+    else if (x > mysteryNumber) {
         console.log('Too big.')
         document.body.innerHTML = '<h1>Too big.</h1>'
         document.body.style.backgroundColor = '#2b1880'
     }
-    if (x == mysteryNumber) {
+    else if (x == mysteryNumber) {
         console.log('Hurrah')
         document.body.innerHTML = '<h1>Hurrah!</h1>'
         document.body.style.backgroundColor = '#428018'
